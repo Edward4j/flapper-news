@@ -1,0 +1,17 @@
+{
+  "name": "flapper-news",
+  "authors": [
+    "Edward4j <eduard.dovgal@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
