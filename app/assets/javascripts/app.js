@@ -24,7 +24,12 @@ angular.module('flapperNews', [
         .state('posts', {
           url: '/posts/{id}',
           templateUrl: 'posts/_posts.html',
-          controller: 'PostsController'
+          controller: 'PostsController',
+          resolve: {
+            post: ['$stateParams', 'posts', function($stateParams, posts) {
+              return posts.get($stateParams.id);
+            }]
+          }
         });
 
       $urlRouterProvider.otherwise('home');

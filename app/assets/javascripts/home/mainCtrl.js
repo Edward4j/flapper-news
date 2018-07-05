@@ -55,7 +55,9 @@ angular.module('flapperNews')
       };
 
       $scope.incrementUpvotes = function(post) {
-        post.upvotes += 1;
+        //post.upvotes += 1;
+        // Replace above with upvote method from posts service to persist data in DB
+        posts.upvote(post);
       };
 
       $scope.decrementUpvotes = function(post) {
