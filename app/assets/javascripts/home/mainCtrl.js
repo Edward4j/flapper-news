@@ -34,15 +34,22 @@ angular.module('flapperNews')
         if(!$scope.title || $scope.title === '') { return; }
 
         // Retrieve the title entered into our form, which is bound to the $scope variable title, and set title to blank once it has been added to the posts array:
-        $scope.posts.push({
+        //$scope.posts.push({
+        //  title: $scope.title,
+        //  link: $scope.link,
+        //  upvotes: 0, // add an array of fake comments to the posts object:
+        //  comments: [
+        //    {author: 'Joe', body: 'Cool post!', upvotes: 0},
+        //    {author: 'Bob', body: 'Great idea but everything is wrong!', upvotes: 0}
+        //  ]
+        //});
+
+        // Modify this method to create post on backend
+        posts.create({
           title: $scope.title,
-          link: $scope.link,
-          upvotes: 0, // add an array of fake comments to the posts object:
-          comments: [
-            {author: 'Joe', body: 'Cool post!', upvotes: 0},
-            {author: 'Bob', body: 'Great idea but everything is wrong!', upvotes: 0}
-          ]
+          link: $scope.link
         });
+
         $scope.title = '';
         $scope.link = '';
       };

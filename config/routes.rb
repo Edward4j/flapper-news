@@ -27,6 +27,18 @@ Rails.application.routes.draw do
   #     end
   #   end
 
+  resources :posts, only: [:create, :index, :show] do
+    resources :comments, only: [:show, :create] do
+      member do
+        put '/upvote', to: 'comments#upvote'
+      end
+    end
+
+    member do
+      put '/upvote', to: 'posts#upvote'
+    end
+  end
+
   # Example resource route with sub-resources:
   #   resources :products do
   #     resources :comments, :sales

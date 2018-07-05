@@ -13,7 +13,13 @@ angular.module('flapperNews', [
         .state('home', {
           url: '/home',
           templateUrl: 'home/_home.html',
-          controller: 'MainCtrl'
+          controller: 'MainCtrl',
+
+          // Use the resolve property of ui-router to ensure posts are loaded:
+          resolve: {
+            postPromise: ['posts', function(posts) {
+              return posts.getAll();
+            }]}
         })
         .state('posts', {
           url: '/posts/{id}',
