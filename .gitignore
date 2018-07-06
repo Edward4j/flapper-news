@@ -24,3 +24,6 @@
 
 # Ignore Byebug
 .byebug_history
+
+# Ignore dotenv
+/.env

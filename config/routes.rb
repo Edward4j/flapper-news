@@ -6,6 +6,15 @@ Rails.application.routes.draw do
   # root 'welcome#index'
   root to: 'pages#angular'
 
+  # devise_for :users, controllers: { registrations: 'users/registrations', confirmations: 'users/confirmations', sessions: 'users/sessions', passwords: 'users/passwords' } #, omniauth_callbacks: 'omniauth_callbacks' }
+  # devise_for :users, controllers: { registrations: 'registrations', confirmations: 'confirmations', sessions: 'sessions', passwords: 'passwords' }
+  #
+  # devise_scope :user do
+  #   get 'users/confirmation/success' => 'users/confirmations#success', as: :success_confirmation
+  #   match '/users/sign_out' => 'devise/sessions#destroy', :as => :destroy_user_session_custom, via: [:get, :delete]
+  # end
+  devise_for :users, skip: :controllers
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
