@@ -1,9 +1,11 @@
+{<img src="https://travis-ci.com/Edward4j/flapper-news.svg?branch=master" alt="Build Status" />}[https://travis-ci.com/Edward4j/flapper-news]
+
 == Backend application Flapper News.
 
-Project built without `javascripts` folder nor an `application.js` because I will connect Angular 1 as a frontend part.
+Project built without <tt>javascripts</tt> folder nor an <tt>application.js</tt> because I will connect Angular 1 as a frontend part.
 
 * Ruby version
-ruby 2.2.2p95 (2015-04-13 revision 50295) [x86_64-darwin14]
+ruby 2.2.2
 
 * Rails version
 
