@@ -1,0 +1,13 @@
+language: ruby
+rvm:
+ - 2.2
+cache: bundler
+bundler_args: "--without production"
+before_install:
+  - gem install bundler
+before_script:
+  - bundle exec rake tmp:create
+  - export RAILS_ENV=test
+  - bundle exec rails db:environment:set RAILS_ENV=test || true
+  - bundle exec rake db:setup
+script: bin/rspec test/
