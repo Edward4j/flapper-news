@@ -1,4 +1,5 @@
 class CommentsController < ApplicationController
+  before_filter :authenticate_user!, only: [:create, :upvote]
   before_action :set_post, only: [:create, :upvote]
 
   def create

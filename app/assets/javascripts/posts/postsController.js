@@ -33,5 +33,9 @@ angular.module('flapperNews')
         posts.upvoteComment(post, comment);
       };
 
+      $scope.goBack = function() {
+        window.history.back();
+      };
+
     }
   ]);
