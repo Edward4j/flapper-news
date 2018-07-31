@@ -23,7 +23,9 @@ development:
 test:
   <<: *default
 #  database: db/test.sqlite3
-  database: ":memory:"
+#  database: ":memory:"
+  username: postgres
+  database: flapper_test
 
 production:
   <<: *default

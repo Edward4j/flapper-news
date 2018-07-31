@@ -7,6 +7,7 @@ gem 'rails', '4.2.10'
 # gem 'sqlite3'
 
 # gem 'pg'
+gem 'pg', '~> 0.20'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -49,5 +50,4 @@ end
 
 group :production do
   gem 'rails_12factor'
-  gem 'pg', '~> 0.20'
 end
