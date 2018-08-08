@@ -1,0 +1,42 @@
+{
+  "home": {
+    "about": {
+      "desc": "We leverage the power of data, networks and conversations to transform the way financial products are sold. We facilitate capital raises and IPOs along with upselling and cross-selling by asset and wealth managers. We enable smart sales automation for finance.",
+      "title": "About us"
+    },
+    "development": {
+      "firstSentence": "This page is under development, so sorry if you can’t find answers to all your questions here.",
+      "lastSentence": "Therefore, please feel free to contact us!"
+    },
+    "banner": [
+      {
+        "cta": "ESTIMATE YOUR FUNDRAISING POTENTIAL",
+        "ctaLink": "https://flapper-news.typeform.com/to/aVHqrb",
+        "image": "/backgrounds/startups-bg.jpg",
+        "quote": "“In just 6 weeks, we raised over 550,000€ for our startup”",
+        "quoteBy": "PXCom"
+      },
+      {
+        "cta": "ESTIMATE YOUR FUNDRAISING POTENTIAL",
+        "ctaLink": "https://flapper-news.typeform.com/to/aVHqrb",
+        "image": "/backgrounds/home-slider-sme.jpg",
+        "quote": "“5 clients are funding the growth of our wineries”",
+        "quoteBy": "CEP Dargent"
+      },
+      {
+        "ctaLink": "mailto:ipo@sparkup.fr",
+        "ctaNormal": "Get in touch",
+        "image": "/backgrounds/ipo.jpg",
+        "quote": "“The IPO was oversubscribed 7 times”",
+        "quoteBy": "Actifin"
+      },
+      {
+        "cta": "Discover in 30 seconds how SparkUp can help",
+        "ctaLink": "https://flapper-news.typeform.com/to/BCfhKQ?langue=UK&introduction=%2030%20seconds%20to%20know%20how%20SparkUp%20can%20help%20you",
+        "image": "/backgrounds/asset-manager.jpg",
+        "quote": "“We found 15 new partners to distribute our funds”",
+        "quoteBy": "Truffle Capital"
+      }
+    ]
+  }
+}

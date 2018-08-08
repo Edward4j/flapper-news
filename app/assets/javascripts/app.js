@@ -51,6 +51,11 @@ angular.module('flapperNews', [
               $state.go('home');
             })
           }]
+        })
+        .state('thank-you', {
+          url: '/thank-you',
+          templateUrl: 'thank-you/_thank_you.html',
+          controller: 'ThankYouCtrl'
         });
 
       $urlRouterProvider.otherwise('home');

@@ -11,7 +11,7 @@ angular.module('flapperNews')
       });
 
       $scope.$on('device:new-registration', function(e, user) {
-        $scope.user - user;
+        $scope.user = user;
       });
 
       $scope.$on('device:login', function(e, user) {
